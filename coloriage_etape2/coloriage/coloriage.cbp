@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="coloriage" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="test_commun">
+				<Option output="bin/test_commun" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="." />
+				<Option object_output="obj/test_commun/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+			</Target>
+			<Target title="generer">
+				<Option output="bin/generer" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="." />
+				<Option object_output="obj/generer/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="30 0.5 1 graphes/essai_30.col" />
+			</Target>
+			<Target title="backtrack_seq">
+				<Option output="bin/backtrack_seq" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="." />
+				<Option object_output="obj/backtrack_seq/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="graphes/exemple_simple.col -v" />
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O2" />
+			<Add option="-Wall" />
+			<Add option="-Wextra" />
+			<Add option="-std=c11" />
+			<Add option="-fopenmp" />
+		</Compiler>
+		<Linker>
+			<Add option="-fopenmp" />
+		</Linker>
+		<Unit filename="backtrack_seq.c">
+			<Option compilerVar="CC" />
+			<Option target="backtrack_seq" />
+		</Unit>
+		<Unit filename="generer.c">
+			<Option compilerVar="CC" />
+			<Option target="generer" />
+		</Unit>
+		<Unit filename="graphe.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="graphe.h" />
+		<Unit filename="mesures.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mesures.h" />
+		<Unit filename="test_commun.c">
+			<Option compilerVar="CC" />
+			<Option target="test_commun" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

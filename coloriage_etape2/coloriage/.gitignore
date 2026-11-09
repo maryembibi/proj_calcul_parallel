@@ -1,0 +1,12 @@
+*.o
+*.exe
+bin/
+obj/
+*.layout
+*.depend
+test_commun
+generer
+glouton_seq
+glouton_par
+backtrack_seq
+backtrack_par

@@ -1,0 +1,10 @@
+c Chemin a-b-c-d : montre que le glouton dépend de l'ordre des sommets
+c Ordre a, b, c, d : 2 couleurs (optimal) ; ordre a, d, b, c : 3 couleurs
+p edge 4 3
+c nom 1 a
+c nom 2 b
+c nom 3 c
+c nom 4 d
+e 1 2
+e 2 3
+e 3 4
